@@ -1,0 +1,14 @@
+architectury {
+    common(rootProject.enabled_platforms.split(","))
+}
+
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    // modApi "dev.architectury:architectury:${rootProject.architectury_version}"
+
+    // I've been burned too much relying on Gradle and Maven and things breaking randomly.
+    // So I'm just going to use and refer to the mod .jars directly. Gradle can eat a gock.
+    // Shouldn't matter these are Forge releases, we just wanna do a Mixin / use the API.
+    modImplementation files("../libs/carryon-forge-1.20.1-2.1.2.7.jar")
+    modImplementation files("../libs/valkyrienskies-120-2.3.0-beta.5.jar")
+}
