@@ -1,4 +1,4 @@
-## Carry On + Valkyrien Skies Compat
+## Carry On + Valkyrien Skies Compat [moved to git.gay](https://git.gay/copygirl/carryon-vs-compat)
 
 This mod patches [Carry On] to allow you to pick up blocks from [Valkyrien Skies] ships.
 
